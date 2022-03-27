@@ -1,4 +1,4 @@
-##¿Quien soy y por que he decidido empezar este blog?
+## ¿Quien soy y por que he decidido empezar este blog?
 
 Me llamo Jesús González Ferrer, estudie biotecnología y me especialicé en bioinformática. Siempre me interesaron la neurociencia y la inteligencia articial y en este momento son dos areas que se entrelazan cada vez más y pueden usarse para ayudar a avanzar la una a la otra.
 
