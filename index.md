@@ -1,3 +1,3 @@
-Hi there guys! My name is Jesús Gonzalez Ferrer and I am a bioinformatician interested in Neuroscience, genetics and Data Science.
+Escribo sobre genética, neurociencia, bioinformática, Inteligencia Artificial y los puntos donde estas areas convergen
 
-I plan on posting things related to these fields. Hope you'll like it!
+¡Si esto te interesa no dudes en seguirme!
