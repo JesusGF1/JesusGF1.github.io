@@ -3,7 +3,7 @@ Phase 1: Web Technologies
 1. JavaScript
 - FreeCodeCamp course: https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/
 - a. Learn introductory JavaScript by Building a Pyramid Generator -> 100%
-- b. Review JavaScript Fundamentals by Building a Gradebook App
+- b. Review JavaScript Fundamentals by Building a Gradebook App -> 100%
 - c. Learn Basic JavaScript by Bulding a Role Playing Game
 - d. Learn Basic Debugging by Building a Random Background Color Changer
 - e. Learn Form Validation by Building a Calorie Counter
