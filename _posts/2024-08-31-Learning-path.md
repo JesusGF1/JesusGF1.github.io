@@ -39,6 +39,7 @@ Phase 2: Advanced Topics
 - Torch Geometric: https://pytorch-geometric.readthedocs.io/en/latest/
 5. Neuroscience - MEA Electrophysiology
 - Neurodata Without Borders: https://www.nwb.org/
+- https://github.com/NeurodataWithoutBorders/pynwb
 
 6. Neuromorphic Computing
 - Jason Eshragian lectures: 
