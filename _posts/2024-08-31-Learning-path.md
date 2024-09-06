@@ -5,7 +5,7 @@ Phase 1: Web Technologies
 - a. Learn introductory JavaScript by Building a Pyramid Generator -> 100%
 - b. Review JavaScript Fundamentals by Building a Gradebook App -> 100%
 - c. Learn Basic JavaScript by Bulding a Role Playing Game -> 100%
-- d. Learn Basic Debugging by Building a Random Background Color Changer
+- d. Learn Basic Debugging by Building a Random Background Color Changer -> 100%
 - e. Learn Form Validation by Building a Calorie Counter
 - f. Review DOM Manipulation byu Building a Rock, Paper, Scissors Game
 - g. Learn Basic String and Array Methods by Building a Music player
