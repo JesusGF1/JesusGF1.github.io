@@ -6,7 +6,7 @@ Phase 1: Web Technologies
 - b. Review JavaScript Fundamentals by Building a Gradebook App -> 100%
 - c. Learn Basic JavaScript by Bulding a Role Playing Game -> 100%
 - d. Learn Basic Debugging by Building a Random Background Color Changer -> 100%
-- e. Learn Form Validation by Building a Calorie Counter -> 14%
+- e. Learn Form Validation by Building a Calorie Counter -> 55%
 - f. Review DOM Manipulation byu Building a Rock, Paper, Scissors Game
 - g. Learn Basic String and Array Methods by Building a Music player
 - h. Build a Palindrome Checker Project
