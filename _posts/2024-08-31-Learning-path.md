@@ -34,8 +34,10 @@ Phase 1: JavaScript and GNNs
 - Torch Geometric: https://pytorch-geometric.readthedocs.io/en/latest/
 
 Phase 2: Advanced Topics
+
 3.  Rust
 - The Rust Programming Language: https://doc.rust-lang.org/book/
+
 4. WebAssembly
 - Rust and Web assembly: https://rustwasm.github.io/docs/book/
 
