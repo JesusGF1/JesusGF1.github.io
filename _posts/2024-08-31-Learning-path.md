@@ -7,8 +7,8 @@ Phase 1: Web Technologies
 - c. Learn Basic JavaScript by Bulding a Role Playing Game -> 100%
 - d. Learn Basic Debugging by Building a Random Background Color Changer -> 100%
 - e. Learn Form Validation by Building a Calorie Counter -> 100%
-- f. Review DOM Manipulation byu Building a Rock, Paper, Scissors Game -> 100
-- g. Learn Basic String and Array Methods by Building a Music player
+- f. Review DOM Manipulation byu Building a Rock, Paper, Scissors Game -> 100%
+- g. Learn Basic String and Array Methods by Building a Music player -> 21%
 - h. Build a Palindrome Checker Project
 - j, Learn the Date Object by Building a Date Formatter
 - k, Learn Modern JavaScript Methods by Building Footbal Team cards
