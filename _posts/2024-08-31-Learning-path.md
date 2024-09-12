@@ -1,4 +1,4 @@
-Phase 1: Web Technologies
+Phase 1: JavaScript and GNNs
 
 1. JavaScript
 - FreeCodeCamp course: https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/
@@ -27,16 +27,18 @@ Phase 1: Web Technologies
 - v, Learn Fetch and progmised by builidng an fCC authors page
 - w, Learn asynchronous programming by building an fCC Forum LeaderBoard
 - x, Build a Pokemon Search App Project
-2.  Rust
-- The Rust Programming Language: https://doc.rust-lang.org/book/
-3. WebAssembly
-- Rust and Web assembly: https://rustwasm.github.io/docs/book/
+
+2. Graph Neural Networks
+- Book: Graph Representation Learning by William L. Hamilton
+- Stanford CS224W Machine Learning with Graphs: https://www.youtube.com/playlist?list=PLoROMvodv4rOP-ImU-O1rYRg2RFxomvFp
+- Torch Geometric: https://pytorch-geometric.readthedocs.io/en/latest/
 
 Phase 2: Advanced Topics
-4. Graph Neural Networks
-- Stanford CS224W Machine Learning with Graphs: https://www.youtube.com/playlist?list=PLoROMvodv4rOP-ImU-O1rYRg2RFxomvFp
-- Book: 
-- Torch Geometric: https://pytorch-geometric.readthedocs.io/en/latest/
+3.  Rust
+- The Rust Programming Language: https://doc.rust-lang.org/book/
+4. WebAssembly
+- Rust and Web assembly: https://rustwasm.github.io/docs/book/
+
 5. Neuroscience - MEA Electrophysiology
 - Neurodata Without Borders: https://www.nwb.org/
 - https://github.com/NeurodataWithoutBorders/pynwb
