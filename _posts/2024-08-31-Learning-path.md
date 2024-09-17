@@ -8,8 +8,8 @@ Phase 1: JavaScript and GNNs
 - d. Learn Basic Debugging by Building a Random Background Color Changer -> 100%
 - e. Learn Form Validation by Building a Calorie Counter -> 100%
 - f. Review DOM Manipulation byu Building a Rock, Paper, Scissors Game -> 100%
-- g. Learn Basic String and Array Methods by Building a Music player -> 21%
-- h. Build a Palindrome Checker Project
+- g. Learn Basic String and Array Methods by Building a Music player -> 100%
+- h. Build a Palindrome Checker Project -> 100
 - j, Learn the Date Object by Building a Date Formatter
 - k, Learn Modern JavaScript Methods by Building Footbal Team cards
 - h, Learn localStorage by Building a Todo App
