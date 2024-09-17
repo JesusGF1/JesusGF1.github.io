@@ -10,7 +10,7 @@ Phase 1: JavaScript and GNNs
 - f. Review DOM Manipulation byu Building a Rock, Paper, Scissors Game -> 100%
 - g. Learn Basic String and Array Methods by Building a Music player -> 100%
 - h. Build a Palindrome Checker Project -> 100
-- j, Learn the Date Object by Building a Date Formatter
+- j, Learn the Date Object by Building a Date Formatter -> 100%
 - k, Learn Modern JavaScript Methods by Building Footbal Team cards
 - h, Learn localStorage by Building a Todo App
 - i, Learn Recursion by Building a Decimal to Binary Converter
