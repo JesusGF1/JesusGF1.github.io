@@ -11,7 +11,7 @@ Phase 1: JavaScript and GNNs
 - g. Learn Basic String and Array Methods by Building a Music player -> 100%
 - h. Build a Palindrome Checker Project -> 100
 - j, Learn the Date Object by Building a Date Formatter -> 100%
-- k, Learn Modern JavaScript Methods by Building Footbal Team cards
+- k, Learn Modern JavaScript Methods by Building Footbal Team cards -> 100%
 - h, Learn localStorage by Building a Todo App
 - i, Learn Recursion by Building a Decimal to Binary Converter
 - l, Build a Roman Numeral Converter Project
