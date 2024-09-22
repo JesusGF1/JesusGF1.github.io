@@ -37,8 +37,12 @@ LDpred2:
 Genetic background:
 Credible interval:
 GWAS Genome Wide association study: 
-
-
+Gemini: 
+Gemini 1.5:
+Mixture of Experts: 
+Context window: 
+Routing:
+Contrastive learning:
 
 
 Functions described: 
