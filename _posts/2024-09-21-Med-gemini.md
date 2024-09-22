@@ -1,11 +1,9 @@
-Polygenic scoring accuracy varies across the genetic ancestry continuum
+Polygenic risk assessment is crucial in modern healthcare as it enables personalized medicine by estimating an individual's genetic predisposition to various conditions or phenotypes (including disease). This approach allows for early intervention, better resource allocation in healthcare systems, and improved risk stratification when combined with traditional risk factors. It's also important in biological research as it can discover new targets for drug development and protein design. Although important, polygenic risk scores are not deterministic, as environmental factors and lifestyle choices also influence disease development. One of the biggest caveats with polygenic scores is their limited portability between different groups of individuals (Genetic ancestry, Household income...) (1). This translates to reduced risk assesment accuracy in understudied populations, lowering the applicability of this techniques and augmenting health disparities in underrepresented groups. 
+The classical way to calculate PGS portability involved population-level statistics (R^2) (2), these metrics although useful run into the problem of decreased PGS accuracy. The further each invididual gets from the "center" of the study population (aggregated results for all the individuals studied), the worse the risk assesment becomes. (3) . In the paper "Polygenic scoring accuracy varies across the genetic ancestry continuum", the authors propose to move towards metrics that take into account the continuum space of genetic backgrounds present in the population. This change should obtain more accurate, robust and unbiased results.
 
 
 
 
-
-
-Advancing Multimodal Medical Capabilities of Gemini
 
 Genomics: A genomic featurization for an individual consists of polygenic risk scores (PRSs) for 7,415 traits. Each PRS estimates the genetic risk of the individual for a particular disease or trait, calculated by aggregating the estimated effects of many common variants associated with the condition. Each PRS was computed using genome-wide association study summary statistics computed by the PanUKB Consortium (Pan-UKB team, 2020). These genomic features were then converted to images by projecting the PRSs into patch-aligned squares of 8 × 8 pixels with values between [0, 255]. The 3 RGB channels of the images were used to stack 3 different p-value thresholds of the projections. The PRS features were obtained from the genetic information of 314,540 individuals of European genetically inferred ancestry from the UK Biobank (Bycroft et al., 2018; Sudlow et al., 2015).
 
@@ -58,6 +56,11 @@ In which σ 2β is per single nucleotide polymorphism (SNP) heritability; σe2 i
 The metric here is an upper bound of genetic prediction accuracy
 
 References:
+1 - Martin, A. R. et al. Clinical use of current polygenic risk scores may exacerbate health disparities. Nat. Genet. 51, 584–591 (2019).
+2 - Lambert, S. A., Abraham, G. & Inouye, M. Towards clinical utility of polygenic risk scores. Hum. Mol. Genet. 28, R133–R142 (2019).
+3 - Polygenic scoring accuracy varies across the genetic ancestry continuum
+- Advancing Multimodal Medical Capabilities of Gemini
+
 -
 -
 -
