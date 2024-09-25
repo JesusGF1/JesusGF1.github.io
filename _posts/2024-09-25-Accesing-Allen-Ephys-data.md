@@ -1,14 +1,14 @@
 https://allensdk.readthedocs.io/en/latest/install.html
 
-Create a new conda environment and install the AllenSDK using pip
+Create a new conda environment and install the AllenSDK using pip, set python version as well. 
 
-conda create -n allensdk
+conda create -n allensdk python=3.8
 conda activate allensdk
 pip install allensdk
-Add conda env to ipykernel so that the notebook can use it
 
-pip install ipykernel
-python -m ipykernel install --user --name=allensdk
+https://www.nwb.org/
+
+https://spikeinterface.readthedocs.io/en/latest/
 
 
 https://allensdk.readthedocs.io/en/latest/visual_coding_neuropixels.html
