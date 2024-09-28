@@ -4,7 +4,7 @@ Polygenic risk assessment is crucial in modern healthcare as it enables personal
 The classical way to calculate PGS portability involved population-level statistics (R^2) (2), these metrics although useful run into the problem of decreased PGS accuracy. The further each invididual gets from the "center" of the study population (aggregated results for all the individuals studied), the worse the risk assesment becomes. (3) . In the paper "Polygenic scoring accuracy varies across the genetic ancestry continuum", the authors propose to move towards metrics that take into account the continuum space of genetic backgrounds present in the population. This change should obtain more accurate, robust and unbiased results.
 
 Advances in deep learning with the advent of Transformer-Decoder architectures (Parmar et al., 2018; Vaswani et al., 2017), Multimodal modeling  like PaLI (Chen et al., 2022) and improvements in multimodal understanding and reasoning have allowed researchers to train huge multimodal datasets that can take different levels and types of information to improve risk assesment. One of this examples is Med-Gemini, built on top of Gemini 1.5. 
-**Video**:A good video explaining the architecture of this type of models in detail can be found in Josh Starmer's channel (https://www.youtube.com/watch?v=bQ5BoolX9Ag).
+**Video**:A good video explaining the architecture of this type of models in detail can be found in Josh Starmer's channel [Video](https://www.youtube.com/watch?v=bQ5BoolX9Ag).
 
 Med-gemini was trained on different types of data, mostly focused around medical imaging and text reports, but today I want to focus on the way they processed and trained the model for Polygenic risk assesment based on genotype. The data for the training of this part of the model was obtained from the UK biobank project (). This project sequenced the genomes of .... people while also following the patients throughout the years, annotating different Phenotypes (diseases or traits) that the patients could present. This allowed researchers to calculate Polygenic risk scores for the different phenotypes through Genome Wide Association studies. 
 
@@ -19,44 +19,47 @@ The main caveat is the lack of diversity in the samples, these results need to b
 
 ### Glossary:
 
-Polygenic score: Estimates of an individual’s genetic predisposition for complex traits and diseases (that is, genetic liability; also referred to as genetic value).
-Polygenic risk score:
-R2 test:
-Biobank:
-Genetic distance (In paper): GD is defined as a PCA projection of the target individual on the training data used to estimate the PGS weights
-Pearson correlation:
-Genetically inferred ancestry (GIA): Describes the genetic similarity of an individual to a reference dataset (for example, 1000 Genomes) as inferred by methods such as principal component analysis (PCA).
-Heritability:
-Population (In genetics terms):
-Mixed models: 
-Relatedness:
-Ancestry groupings: 
-Admixture: 
-Mahalanobis distance: 
-Upper bound metric: 
-LDpred2: 
-Genetic background:
-Credible interval:
-GWAS Genome Wide association study: 
-Gemini: 
-Gemini 1.5:
-Mixture of Experts: 
-Context window: 
-Routing:
-Contrastive learning:
+- Polygenic score: Estimates of an individual’s genetic predisposition for complex traits and diseases (that is, genetic liability; also referred to as genetic value).
+- Polygenic risk score:
+- R2 test:
+- Biobank:
+- Genetic distance (In paper): GD is defined as a PCA projection of the target individual on the training data used to estimate the PGS weights
+- Pearson correlation:
+- Genetically inferred ancestry (GIA): Describes the genetic similarity of an individual to a reference dataset (for example, 1000 Genomes) as inferred by methods such as principal component analysis (PCA).
+- Heritability:
+- Population (In genetics terms):
+- Mixed models: 
+- Relatedness:
+- Ancestry groupings: 
+- Admixture: 
+- Mahalanobis distance: 
+- Upper bound metric: 
+- LDpred2: 
+- Genetic background:
+- Credible interval:
+- GWAS Genome Wide association study: 
+- Gemini: 
+- Gemini 1.5:
+- Mixture of Experts: 
+- Context window: 
+- Routing:
+- Contrastive learning:
 
 
 ### Functions described: 
 
 Correlation of an individual's genetic liability and PGS estimate:
-$r_i^2(g_i, \hat{g}_i) = \frac{\text{cov}_{\beta,D}(g_i,\hat{g}_i)^2}{\text{var}_\beta(g_i)\text{var}_{\beta,D}(\hat{g}_i)} = 1 - \frac{E_D(\text{var}_{\beta|D}(x_i^\top\beta))}{\text{var}_\beta(x_i^\top\beta)}$
+$$
+r_i^2(g_i, \hat{g}_i) = \frac{\text{cov}_{\beta,D}(g_i,\hat{g}_i)^2}{\text{var}_\beta(g_i)\text{var}_{\beta,D}(\hat{g}_i)} = 1 - \frac{E_D(\text{var}_{\beta|D}(x_i^\top\beta))}{\text{var}_\beta(x_i^\top\beta)}
+$$
 
 Under infinitesimal assumption for which all variants are causal and drawn from a normal distribution:
 
-$r_i^2(g_i, \hat{g}_i) = 1 - \frac{\sigma_\varepsilon^2 \sum_{j=1}^J \frac{1}{\lambda_j} x_i^\top v_j v_j^\top x_i}{\sigma_\beta^2 x_i^\top x_i} = 1 - \frac{\sigma_\varepsilon^2}{\sigma_\beta^2} \frac{\sum_{j=1}^J \frac{1}{\lambda_j} x_i^\top v_j v_j^\top x_i}{x_i^\top x_i}$
+$$
+r_i^2(g_i, \hat{g}_i) = 1 - \frac{\sigma_\varepsilon^2 \sum_{j=1}^J \frac{1}{\lambda_j} x_i^\top v_j v_j^\top x_i}{\sigma_\beta^2 x_i^\top x_i} = 1 - \frac{\sigma_\varepsilon^2}{\sigma_\beta^2} \frac{\sum_{j=1}^J \frac{1}{\lambda_j} x_i^\top v_j v_j^\top x_i}{x_i^\top x_i}
+$$
 
-In which σ 2β is per single nucleotide polymorphism (SNP) heritability; σe2 is the variance of residual environmental noise; vj and λj are the jth eigenvector and eigenvalues of training genotype data and J is the total number of eigenvectors. xvvx ∑j J λ i j ji =1 1 j ⊤⊤is the squared Mahalanobis distance of the testing individual i from the centre of the training genotype data on its principal component (PC) space; and x x ii ⊤ is the sum of squared genotypes across all variants
-The metric here is an upper bound of genetic prediction accuracy
+In which σ 2β is per single nucleotide polymorphism (SNP) heritability; σe2 is the variance of residual environmental noise; vj and λj are the jth eigenvector and eigenvalues of training genotype data and J is the total number of eigenvectors. xvvx ∑j J λ i j ji =1 1 j ⊤⊤is the squared Mahalanobis distance of the testing individual i from the centre of the training genotype data on its principal component (PC) space; and x x ii ⊤ is the sum of squared genotypes across all variants. The metric here is an upper bound of genetic prediction accuracy
 
 ### References:
 [^1]- Martin, A. R. et al. Clinical use of current polygenic risk scores may exacerbate health disparities. Nat. Genet. 51, 584–591 (2019).
