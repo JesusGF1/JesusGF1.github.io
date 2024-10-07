@@ -36,6 +36,11 @@ All steps contribute equally to the final mapping layer
 Masks can be averaged and give instance wise interpretation
 A feature that has been masked a lot has a low importance.
 
+# To be Foundational you need
+Label transfer
+Batch Integration
+Gene perturbation prediction. 
+
 We could add some interpretability with another heatmap. 
 
 #Pretraining - Training by predicting randomly masked features. 
