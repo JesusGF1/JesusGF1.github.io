@@ -1,3 +1,5 @@
+<!DOCTYPE html> 
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,3 +24,20 @@
   <script type="text/javascript"> hljs.highlightAll(); </script>
   <!-- end highlight.js support -->
 </head>
+
+
+<body>
+  <header class="site-header" role="banner">
+    <div class="wrapper">
+      <a class="site-title" href="{{ '/' | relative_url }}">
+        <img src="../css/images/logo.webp" alt="Logo" class="navbar-logo">
+        {{ site.title }}
+      </a>
+      <nav class="site-nav">
+        {% include nav.html %}
+      </nav>
+    </div>
+  </header>
+  <!-- Your existing content goes here -->
+</body>
+</html>
