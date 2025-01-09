@@ -47,3 +47,11 @@ hr {
 body {
   background: linear-gradient(to bottom, white, lightblue);
 }
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background: white;
+  border-bottom: 1px solid lightblue;
+}
