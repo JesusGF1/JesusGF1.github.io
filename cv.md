@@ -4,8 +4,6 @@ title: Curriculum Vitae
 permalink: /cv/
 ---
 
-<h1>Curriculum Vitae</h1>
-
 # EDUCATION
 ## 2022 - Current
 PhD in Bioinformatics and Bioengineering, University of California Santa Cruz. Braingeneers Group

@@ -1,3 +1,10 @@
+<style>
+  .navbar-logo {
+    height: 40px; /* Adjust the height as needed */
+    width: auto; /* Maintain aspect ratio */
+  }
+</style>
+
 <hr>
 <div class="post_navi">
   {%- if page.previous.url -%}
@@ -19,5 +26,12 @@
   </a>
   {%- endif -%}
   <a href="{{ '/cv/' | relative_url }}">CV</a>
-
+  <header class="site-header" role="banner">
+    <div class="wrapper">
+      <a class="site-title" href="{{ '/' | relative_url }}">
+        <img src="/images/scienceyisu.png" alt="Logo" class="navbar-logo">
+        {{ site.title }}
+      </a>
+    </div>
+  </header>
 </div>
