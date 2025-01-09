@@ -26,18 +26,14 @@
 </head>
 
 
-<body>
-  <header class="site-header" role="banner">
-    <div class="wrapper">
-      <a class="site-title" href="{{ '/' | relative_url }}">
-        <img src="/images/brainyisu.png" alt="Logo" class="navbar-logo">
-        {{ site.title }}
-      </a>
-      <nav class="site-nav">
-        {% include nav.html %}
-      </nav>
-    </div>
-  </header>
-  <!-- Your existing content goes here -->
-</body>
-</html>
+<header class="site-header" role="banner">
+  <div class="wrapper">
+    <a class="site-title" href="{{ '/' | relative_url }}">
+      <img src="/images/brainyisu.png" alt="Logo" class="navbar-logo">
+      {{ site.title }}
+    </a>
+    <nav class="site-nav">
+      {% include navlinks.html %}
+    </nav>
+  </div>
+</header>
