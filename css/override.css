@@ -47,11 +47,7 @@ hr {
 body {
   background: linear-gradient(to bottom, white, lightblue);
 }
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  background: white;
-  border-bottom: 1px solid lightblue;
+.navbar-logo {
+  height: 20px; /* Adjust the height as needed */
+  width: auto; /* Maintain aspect ratio */
 }
