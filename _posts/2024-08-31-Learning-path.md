@@ -13,7 +13,7 @@ Phase 1: JavaScript and GNNs
 - j, Learn the Date Object by Building a Date Formatter -> 100%
 - k, Learn Modern JavaScript Methods by Building Footbal Team cards -> 100%
 - h, Learn localStorage by Building a Todo App -> 100%
-- i, Learn Recursion by Building a Decimal to Binary Converter -> 11%
+- i, Learn Recursion by Building a Decimal to Binary Converter -> 100%
 - l, Build a Roman Numeral Converter Project
 - m, Learn Regular Expression by Building a Spam Filter
 - n, Learn Basic Algorithmic Thinking by Building a Number Sorter
