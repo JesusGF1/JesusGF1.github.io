@@ -16,34 +16,33 @@ A Gemini 1.5 model was then finetuned, fine-tuning was framed as a captioning or
 The authors evaluated Med-Gemini-Polygenic performance on case/control balanced datasets sampled from the test split (200 cases, 200 controls per outcome) (They did a benchmark proving that this number is good enough when compared to bigger splits although I would have liked to see bigger datasets). The output was a disease probability score from obtained by prompting the model to predict the status of a health outcome using a text prompt and the genetic risk “image”, and computed the probability as the ratio of the likelihoods of the model generating a positive and negative prediction. Med-Gemini-Polygenic achieved higher AUCs than the PRS linear model benchmarks for all in-distribution health outcomes except glaucoma (Figure X). To evaluate zero-shot generalization ability, they prompted Med-Gemini-Polygenic to predict disease status for out-of-distribution health outcomes. They also compared this to the performance of linear probes in the model embeddings. This probes are more interpretable but the whole model performed better, probably due to non linearities in the data.
 The main caveat is the lack of diversity in the samples, these results need to be replicated in different cohorts. Also the explainability aspect of the model should be better studied as the stakes are really high to make decisions based on these types of models without fully understanding how they reached the diagnosis.
 
-
 ### Glossary:
 
-- Polygenic score: Estimates of an individual’s genetic predisposition for complex traits and diseases (that is, genetic liability; also referred to as genetic value).
-- Polygenic risk score:
-- R2 test:
-- Biobank:
-- Genetic distance (In paper): GD is defined as a PCA projection of the target individual on the training data used to estimate the PGS weights
-- Pearson correlation:
+- Polygenic score: Estimates of an individual's genetic predisposition for complex traits and diseases (that is, genetic liability; also referred to as genetic value).
+- Polygenic risk score: A number that summarizes the estimated effect of many genetic variants on an individual's phenotype, typically calculated as a weighted sum of trait-associated alleles.
+- R2 test: A statistical measure (R-squared) that represents the proportion of variance in a dependent variable that's predictable from independent variable(s). Values range from 0 to 1.
+- Biobank: A large collection of biological samples and associated data, stored for research purposes. Examples include UK Biobank and FinnGen.
+- Genetic distance (In paper): GD is defined as a PCA projection of the target individual on the training data used to estimate the PGS weights.
+- Pearson correlation: A statistical measure that evaluates the linear relationship between two variables, ranging from -1 to +1.
 - Genetically inferred ancestry (GIA): Describes the genetic similarity of an individual to a reference dataset (for example, 1000 Genomes) as inferred by methods such as principal component analysis (PCA).
-- Heritability:
-- Population (In genetics terms):
-- Mixed models: 
-- Relatedness:
-- Ancestry groupings: 
-- Admixture: 
-- Mahalanobis distance: 
-- Upper bound metric: 
-- LDpred2: 
-- Genetic background:
-- Credible interval:
-- GWAS Genome Wide association study: 
-- Gemini: 
-- Gemini 1.5:
-- Mixture of Experts: 
-- Context window: 
-- Routing:
-- Contrastive learning:
+- Heritability: The proportion of variation in a trait that can be attributed to genetic factors rather than environmental influences.
+- Population (In genetics terms): A group of individuals of the same species living in a particular geographic area that can interbreed.
+- Mixed models: Statistical models that contain both fixed effects and random effects, often used in genetics to account for population structure and relatedness.
+- Relatedness: The degree of genetic similarity between individuals due to shared ancestry.
+- Ancestry groupings: Classifications of individuals based on their genetic similarities and geographical origins.
+- Admixture: The presence of DNA from multiple ancestral populations in an individual.
+- Mahalanobis distance: A measure of distance that accounts for correlations in data and is scale-invariant.
+- Upper bound metric: The theoretical maximum performance achievable by a model or method under ideal conditions.
+- LDpred2: A Bayesian method for calculating polygenic scores that accounts for linkage disequilibrium between genetic variants.
+- Genetic background: The complete set of genes in an organism's genome, including their interactions.
+- Credible interval: A Bayesian statistical interval that gives a range of values that likely contains the true parameter value.
+- GWAS Genome Wide association study: A research method that examines genetic variants across the genome to identify associations with traits or diseases.
+- Gemini: A family of large language models developed by Google, known for strong performance across various tasks.
+- Gemini 1.5: An updated version of Google's Gemini model with improved capabilities and longer context window.
+- Mixture of Experts: An architecture where multiple specialized neural networks (experts) handle different aspects of input, coordinated by a gating network.
+- Context window: The maximum amount of text a language model can process at once.
+- Routing: The process of directing inputs to appropriate expert networks in a Mixture of Experts system.
+- Contrastive learning: A machine learning approach where models learn by comparing similar and dissimilar examples, often used in self-supervised learning.
 
 
 ### Functions described: 
