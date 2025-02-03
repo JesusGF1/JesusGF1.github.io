@@ -1,48 +1,80 @@
-## Architecture
+# TabNet: A Deep Learning Architecture for Interpretable Tabular Data
 
+TabNet represents a breakthrough in handling tabular data with deep learning, offering both high performance and interpretability. This post explores its innovative architecture and key components that make it particularly effective for structured data analysis.
 
-[Tabnet](https://www.youtube.com/watch?v=ysBaZO8YmX8)
+## Core Architecture Overview
 
-Input
+TabNet processes data through a series of sequential steps, each contributing to the final prediction. What makes it unique is its ability to select relevant features at each decision step, similar to how humans make sequential decisions by focusing on different aspects of a problem.
 
-Batchnorm Layer: 
+### The Building Blocks
 
-Step 1:
-Feature Transformer:
-Attentive transformer: creates a Mask for the next Feature transformer
-Feature transformer: creates predictions with Relu and next features for attentive transformer.
+#### Feature Transformer
+At the heart of TabNet lies the Feature Transformer, which consists of four consecutive Gated Linear Unit (GLU) blocks. Each GLU block comprises:
 
-Every step output is then summed for the final process of classification, regression...
-You can also use the masks to get information on what the model is selecting for the classification
+1. A fully connected layer
+2. Batch normalization
+3. A GLU activation function that performs element-wise multiplication between a sigmoid function and input features
 
-Feature transformer block: 
-- Succesion of 4 consecutive GLU blocks
-GLU Block:
-- Fully connected layer - Batchnorm - GLU
-- GLU is Sigmoid times(bitwise multiplication) input features
+This structure allows the model to learn complex feature interactions while maintaining computational efficiency.
 
-There are some shared blocks across all steps and also some independent blocks for each step. 
+#### Attentive Transformer
 
-Attentive transformer
-Fully connected - Batch normalization + Sparsemax with prior scales
-What's the prior? At the beginning all ones. How much you have used them across the models.
-For next steps is going to be gamma - previous usage...
-Gamma close to 1 tries to use different features at each step.
-Gamma bigger use the same feature. 
-Sparsemax is an sparse version of the SoftMax
+The Attentive Transformer is what gives TabNet its interpretability. It works by:
 
-The more steps the bigger the model
-All steps contribute equally to the final mapping layer
-Masks can be averaged and give instance wise interpretation
-A feature that has been masked a lot has a low importance.
+1. Creating masks that determine feature importance
+2. Using a fully connected layer followed by batch normalization
+3. Applying a sparsemax activation function with prior scales
 
-# To be Foundational you need
-Label transfer
-Batch Integration
-Gene perturbation prediction. 
+The prior scales are particularly interesting - they start as ones and evolve based on feature usage across previous steps. This mechanism is controlled by a gamma parameter:
+- Gamma close to 1: Encourages the use of different features at each step
+- Larger gamma values: Promotes consistent feature usage across steps
 
-We could add some interpretability with another heatmap. 
+### Sequential Processing
 
-#Pretraining - Training by predicting randomly masked features. 
+The model processes data in steps, where each step involves:
 
-# Can be used with categorical features and embeddings. 
+1. The Attentive Transformer creating a mask
+2. The Feature Transformer using this mask to generate predictions
+3. Outputs from each step being aggregated for the final prediction
+
+### Interpretability Features
+
+TabNet offers several ways to interpret its decisions:
+
+- Instance-wise feature importance through mask analysis
+- Aggregated feature importance across steps
+- The ability to track which features contribute most to specific predictions
+
+## Advanced Capabilities
+
+### Handling Different Data Types
+
+TabNet can effectively work with:
+- Numerical features
+- Categorical features (through embeddings)
+- Mixed data types
+
+### Pretraining Capabilities
+
+The architecture supports self-supervised pretraining by predicting randomly masked features, similar to BERT's approach in NLP. This can significantly improve performance when labeled data is scarce.
+
+### Foundation Model Requirements
+
+To serve as a foundation model, TabNet needs to support:
+
+1. Label transfer capabilities
+2. Batch integration
+3. Gene perturbation prediction
+
+## Implementation Considerations
+
+When implementing TabNet, consider:
+
+- The number of steps directly affects model complexity
+- All steps contribute equally to the final prediction
+- Feature importance can be derived from mask averaging
+- The model can be enhanced with additional visualization tools like heatmaps
+
+## Conclusion
+
+TabNet's architecture represents a significant advancement in tabular data processing, offering a rare combination of high performance and interpretability. Its sequential decision-making process, coupled with feature selection mechanisms, makes it particularly suitable for applications where understanding model decisions is as important as prediction accuracy.
