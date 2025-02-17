@@ -1,6 +1,6 @@
 # TabNet: A Deep Learning Architecture for Interpretable Tabular Data
 
-TabNet represents a breakthrough in handling tabular data with deep learning, offering both high performance and interpretability. This post explores its innovative architecture and key components that make it particularly effective for structured data analysis.
+TabNet represents a breakthrough in handling tabular data with deep learning, offering both high performance and interpretability. This post explores its innovative architecture and key components that make it particularly effective for single cell RNA analysis.
 
 ## Core Architecture Overview
 
@@ -58,13 +58,13 @@ TabNet can effectively work with:
 
 The architecture supports self-supervised pretraining by predicting randomly masked features, similar to BERT's approach in NLP. This can significantly improve performance when labeled data is scarce.
 
-### Foundation Model Requirements
+### Foundation Model Requirements for scRNA
 
-To serve as a foundation model, TabNet needs to support:
+To serve as a foundation model for scRNA, TabNet needs to support:
 
-1. Label transfer capabilities
-2. Batch integration
-3. Gene perturbation prediction
+1. Label transfer capabilities (Tabnet trained in a supervised manner has been used as the model for supervised classification of cell types in a couple of papers (SIMS, scTab))
+2. Batch integration (Categorical features representing the batch or disease could be used for batch integration)
+3. Gene perturbation prediction (Pretrain Tabnet in an unsupervised manner)
 
 ## Implementation Considerations
 
