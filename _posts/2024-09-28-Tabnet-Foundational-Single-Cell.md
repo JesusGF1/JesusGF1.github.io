@@ -1,6 +1,6 @@
 # TabNet: A Deep Learning Architecture for Interpretable Tabular Data
 
-TabNet represents a breakthrough in handling tabular data with deep learning, offering both high performance and interpretability. This post explores its innovative architecture and key components that make it particularly effective for single cell RNA analysis.
+TabNet represented an advancement in the ability of deep learning to handle tabular data, offering both high performance and interpretability. This post explores its architecture and components that make it particularly effective for single cell RNA analysis.
 
 ## Core Architecture Overview
 
@@ -59,22 +59,13 @@ TabNet can effectively work with:
 The architecture supports self-supervised pretraining by predicting randomly masked features, similar to BERT's approach in NLP. This can significantly improve performance when labeled data is scarce.
 
 ### Foundation Model Requirements for scRNA
+In single cell RNA (scRNA), the data is represented as count matrices; dataframes where rows correspond to individual cells, columns represent genes, and the values indicate the number of reads from a given cell that mapped to each gene. The number of reads assigned to a gene can vary due to multiple factors, including the sequencing technology used, the length of the gene, and the size of the cell, among others. Once these technical biases are accounted for, the relationships between gene counts are expected to reflect the activation of different gene programs, driven by the cell’s transcriptional state.
+
+Some researchers have drawn parallels between scRNA data and natural language processing, adopting the "bag-of-words" concept and applying it to genes, a model known as "bag-of-genes. This approach captures gene interdependencies in a loose, language-like manner. However, given the limitations of current experimental sequencing technologies, these models may be more prone to learning technical noise rather than biologically meaningful signals. In contrast, models like TabNet, which emphasize sparse feature selection, could offer clearer and more interpretable outputs by focusing on the most relevant features and filtering out noise.
 
 To serve as a foundation model for scRNA, TabNet needs to support:
 
 1. Label transfer capabilities (Tabnet trained in a supervised manner has been used as the model for supervised classification of cell types in a couple of papers (SIMS, scTab))
 2. Batch integration (Categorical features representing the batch or disease could be used for batch integration)
-3. Gene perturbation prediction (Pretrain Tabnet in an unsupervised manner)
+3. Gene perturbation prediction (Pretrain Tabnet in an unsupervised manner, forcing it to learn how transcription levels of a gene relate to each other)
 
-## Implementation Considerations
-
-When implementing TabNet, consider:
-
-- The number of steps directly affects model complexity
-- All steps contribute equally to the final prediction
-- Feature importance can be derived from mask averaging
-- The model can be enhanced with additional visualization tools like heatmaps
-
-## Conclusion
-
-TabNet's architecture represents a significant advancement in tabular data processing, offering a rare combination of high performance and interpretability. Its sequential decision-making process, coupled with feature selection mechanisms, makes it particularly suitable for applications where understanding model decisions is as important as prediction accuracy.

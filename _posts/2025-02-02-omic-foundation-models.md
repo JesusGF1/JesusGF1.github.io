@@ -6,7 +6,6 @@ Genomic Foundationless Models: Pretraining Does Not Promise Performance
 Deep learning-based predictions of gene perturbation effects do not yet outperform simple linear methods
 
 
-
 Foundation models struggle with omic tasks such as gene perturbation prediction and genome representation due to a combination of intrinsic biological complexity and methodological limitations. Here’s a structured breakdown of the key reasons:
 
 Data Challenges:
