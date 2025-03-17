@@ -14,8 +14,8 @@ Phase 1: JavaScript and GNNs
 - k, Learn Modern JavaScript Methods by Building Footbal Team cards -> 100%
 - h, Learn localStorage by Building a Todo App -> 100%
 - i, Learn Recursion by Building a Decimal to Binary Converter -> 100%
-- l, Build a Roman Numeral Converter Project
-- m, Learn Regular Expression by Building a Spam Filter
+- l, Build a Roman Numeral Converter Project -> 100%
+- m, Learn Regular Expression by Building a Spam Filter -> 100%
 - n, Learn Basic Algorithmic Thinking by Building a Number Sorter
 - o, Learn Advanced Array Methods by Building a Statistics calculator
 - p, Learn Functional Programming by Building a Spreadsheet
