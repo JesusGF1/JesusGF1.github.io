@@ -64,6 +64,7 @@ Datasets were built by accumulating feature vectors (AP waveforms, long-step AP 
 The relationship between transcriptomic and electrophysiological properties raises the question of whether neuronal electrophysiology can be quantitatively predicted from single-cell RNA sequencing (scRNA-seq) data. Several challenges exist, including technical noise in gene expression measurements and discrepancies between transcript and protein levels. However, initial tests using sparse regression models suggest that ion channel gene expression can predict certain electrophysiological features, with varying accuracy across different components.
 
 ### SST Morphoelectric Types (met-types)
+
 | Transcriptomic Type (t-type)       | Morphoelectric Type (metype)                                   |
 |------------------------------------|---------------------------------------------------------------|
 | **Sst Chodl**                     | Nos1+ long-projecting Sst neurons                           |
