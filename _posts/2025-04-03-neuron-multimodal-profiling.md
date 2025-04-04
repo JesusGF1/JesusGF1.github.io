@@ -122,6 +122,7 @@ Same ephys processing as the previous dataset:
 Electrophysiological features were measured from responses elicited by short (3 ms) current pulses and long (1 s) current steps as previously described9. In brief, action potentials were detected by first identifying locations where the smoothed derivative of the membrane potential (dV/dt) exceeded 20 mV ms−1, then refining on the basis of several criteria including threshold-to-peak voltage, time differences and absolute peak height.
 
 ### HUMAN Cortical Morphoelectric glutamatergic Types (met-types)
+
 | **Cell Type**  | **Morphoelectric Properties** | **Related Cell Type**  | **Mouse VISP Relationship** | **Mouse ALM Relationship** |
 |---------------|--------------------------------|------------------------|----------------------------|----------------------------|
 | **LTK**      | Superficial, small apical dendrites, high input resistance, lower excitability | Homologous to mouse supragranular IT types | - | - |
