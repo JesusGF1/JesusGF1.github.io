@@ -1,0 +1,151 @@
+---
+layout: default
+title: Jesus Gonzalez Ferrer
+description: "Jesus Gonzalez Ferrer — PhD candidate in Bioinformatics & Bioengineering at UC Santa Cruz, working on genomics, neuroscience and deep learning."
+---
+
+<header class="hero">
+  <h1 class="name">Jesus Gonzalez Ferrer</h1>
+  <div class="hero-row">
+    <div class="hero-text">
+      <p class="tagline">PhD candidate at UC Santa Cruz</p>
+
+      <div class="pill">Graduate Researcher &middot; Braingeneers, <a href="https://www.ucsc.edu/">UC Santa Cruz</a></div>
+
+      <p class="affil">
+        I work in the Braingeneers group with <strong>David Haussler</strong> and
+        <strong>Mohammed Mostajo-Radji</strong>, and part-time at <strong>Genentech</strong> in the
+        AIBT group. Previously M.Sc. in Computational Biology (Universidad Politécnica de Madrid)
+        and B.Sc. in Biotechnology (Universidad Miguel Hernández).
+      </p>
+
+      <div class="social">
+        <a href="https://github.com/{{ site.github_username }}" title="GitHub" aria-label="GitHub">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+        <a href="https://scholar.google.com/citations?user=pEg7I_cAAAAJ" title="Google Scholar" aria-label="Google Scholar">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.909V17h2V9L12 3zm0 12.6L4.87 11.6 12 7.4l7.13 4.2L12 15.6zM5 15.7v3.1C5 20.6 8.13 22 12 22s7-1.4 7-3.2v-3.1l-7 3.85-7-3.85z"/></svg>
+        </a>
+        <a href="https://twitter.com/{{ site.twitter_username }}" title="X / Twitter" aria-label="X / Twitter">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z"/></svg>
+        </a>
+        <a href="mailto:jgonz373@ucsc.edu" title="Email" aria-label="Email">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.236-8 4.943-8-4.943V6l8 4.943L20 6v2.236z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <img class="avatar" src="{{ '/images/Foto_jesus.jpeg' | relative_url }}" alt="Jesus Gonzalez Ferrer">
+  </div>
+</header>
+
+<div class="bio">
+  <p>
+    I am a PhD candidate in <strong>Bioinformatics &amp; Bioengineering</strong> at
+    <strong>UC Santa Cruz</strong>, working in the Braingeneers group with David Haussler and
+    Mohammed Mostajo-Radji. Before Santa Cruz, I completed an M.Sc. in Computational Biology at the
+    Universidad Politécnica de Madrid and a B.Sc. in Biotechnology at the Universidad Miguel Hernández.
+  </p>
+  <p>
+    My work sits at the intersection of <strong>genomics</strong>, <strong>neuroscience</strong> and
+    <strong>deep learning</strong>. I build computational tools for single-cell data &mdash; including
+    <strong>SIMS</strong>, a deep-learning label-transfer method for scRNA-seq &mdash; and develop models
+    for neural electrophysiology, from variational autoencoders for spike data to studying protosequences
+    and cell-fate plasticity in human cortical organoids. Broadly, I want to use machine learning to
+    understand how the brain develops and computes.
+  </p>
+</div>
+
+<!-- ===================== Selected News ===================== -->
+<section class="news-section">
+  <h2 class="section-title">Selected News</h2>
+  <ol class="timeline">
+    {% for item in site.data.news %}
+    <li class="news-item">
+      <div class="news-date">{{ item.date }}</div>
+      <div class="news-body">
+        <p>
+          {% for t in item.tags %}<span class="tag">{{ t }}</span>{% endfor %}
+          {{ item.body }}
+        </p>
+        {% if item.links and item.links.size > 0 %}
+        <div class="links">
+          {% for l in item.links %}<a href="{{ l.url }}">{{ l.label }}</a>{% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+
+<!-- ===================== Selected Publications ===================== -->
+<section class="pubs-section">
+  <h2 class="section-title">Selected Publications</h2>
+  <p class="section-note">
+    Full list on <a href="https://scholar.google.com/citations?user=pEg7I_cAAAAJ">Google Scholar</a>.
+    (*) denotes equal contribution.
+  </p>
+
+  <div class="filters">
+    <button class="filter active" data-filter="all">Selected</button>
+    <button class="filter" data-filter="genomics">Genomics</button>
+    <button class="filter" data-filter="neuroscience">Neuroscience</button>
+    <button class="filter" data-filter="deep-learning">Deep Learning</button>
+    <button class="filter" data-filter="tools">Tools</button>
+  </div>
+
+  <ol class="pub-list">
+    {% for pub in site.data.publications %}
+    <li class="pub" data-cats="{{ pub.cats }}">
+      <div class="pub-cats">
+        {% for lab in pub.labels %}<span class="tag">{{ lab }}</span>{% endfor %}
+      </div>
+      <h3 class="pub-title">{{ pub.title }}</h3>
+      <p class="pub-authors">{{ pub.authors }}</p>
+      <p class="pub-venue">{{ pub.venue }}</p>
+      {% if pub.links and pub.links.size > 0 %}
+      <div class="links">
+        {% for l in pub.links %}<a href="{{ l.url }}">{{ l.label }}</a>{% endfor %}
+      </div>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+
+<!-- ===================== Writing ===================== -->
+<section class="writing-section">
+  <h2 class="section-title">Writing</h2>
+  <p class="section-note">
+    Notes on neuroscience, genomics and ML on <a href="{{ '/blog/' | relative_url }}">The Brainformatician</a>.
+  </p>
+  <ul class="post-list">
+    {% for post in site.posts limit: 4 %}
+    <li class="post-row">
+      <span class="post-date">{{ post.date | date: "%b %Y" }}</span>
+      <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  <a class="more-link" href="{{ '/blog/' | relative_url }}">All posts &rarr;</a>
+</section>
+
+<script>
+  (function () {
+    var filters = document.querySelectorAll('.filter');
+    var pubs = document.querySelectorAll('.pub');
+    filters.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var f = btn.getAttribute('data-filter');
+        filters.forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        pubs.forEach(function (p) {
+          var cats = p.getAttribute('data-cats') || '';
+          var show = (f === 'all') || (cats.split(' ').indexOf(f) !== -1);
+          p.style.display = show ? '' : 'none';
+        });
+      });
+    });
+  })();
+</script>

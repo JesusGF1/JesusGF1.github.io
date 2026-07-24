@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<head>
+  {%- include head.html -%}
+</head>
+<body>
+  <nav class="topnav">
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <a href="{{ '/blog/' | relative_url }}">Blog</a>
+    <a href="{{ '/cv/' | relative_url }}">CV</a>
+  </nav>
+
+  <main class="container" role="main">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <span>&copy; {{ site.time | date: "%Y" }} {{ site.author | default: "Jesus Gonzalez Ferrer" }}</span>
+    <span class="footer-links">
+      <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+      <a href="{{ '/blog/' | relative_url }}">Blog</a>
+      <a href="{{ '/cv/' | relative_url }}">CV</a>
+    </span>
+  </footer>
+
+  <!-- Code highlighting for blog posts -->
+  <script src="/js/highlightjs/highlight.min.js"></script>
+  <script src="/js/highlightjs/languages/plaintext.min.js"></script>
+  <script src="/js/highlightjs/languages/powershell.min.js"></script>
+  <script src="/js/highlightjs/languages/tsql.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (window.hljs) { hljs.highlightAll(); }
+    });
+  </script>
+</body>
+</html>

@@ -1,42 +1,21 @@
-<!DOCTYPE html> 
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  {%- seo -%}
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  {%- feed_meta -%}
-  {%- if jekyll.environment == 'production' and site.google_analytics -%}
-    {%- include google-analytics.html -%}
-  {%- endif -%}
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- highlight.js support -->
-  <link rel="stylesheet" href="/js/highlightjs/styles/github.css">
-  <link rel="stylesheet" href="/js/highlightjs/styles/ssms.css" />
+{%- seo -%}
+{%- feed_meta -%}
 
-  <script type="text/javascript" src="/js/highlightjs/highlight.min.js"></script>
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
-  <script type="text/javascript" src="/js/highlightjs/languages/plaintext.min.js"></script>
-  <script type="text/javascript" src="/js/highlightjs/languages/powershell.min.js"></script>
-  <script type="text/javascript" src="/js/highlightjs/languages/tsql.min.js"></script>
+<!-- Site styles -->
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
-  <script type="text/javascript"> hljs.highlightAll(); </script>
-  <!-- end highlight.js support -->
-  <style>
-    .navbar-logo {
-      height: 40px; /* Adjust the height as needed */
-      width: auto; /* Maintain aspect ratio */
-    }
-  </style>
-</head>
+<!-- Code highlighting (dark) for blog posts -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
 
-
-<header class="site-header" role="banner">
-  <div class="wrapper">
-    <a class="site-title" href="{{ '/' | relative_url }}">
-      <img src="/images/scienceyisu.png" alt="Logo" class="navbar-logo">
-      {{ site.title }}
-    </a>
-  </div>
-</header>
+{%- if jekyll.environment == 'production' and site.google_analytics -%}
+  {%- include google-analytics.html -%}
+{%- endif -%}

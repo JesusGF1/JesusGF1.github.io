@@ -1,0 +1,19 @@
+---
+layout: page
+title: The Brainformatician
+permalink: /blog/
+description: "Notes on neuroscience, genomics, bioinformatics and AI."
+---
+
+<p class="section-note" style="margin-top:-16px;">
+  Posts on neuroscience, genomics, bioinformatics and artificial intelligence.
+</p>
+
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li class="post-row">
+    <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>

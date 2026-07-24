@@ -1,0 +1,59 @@
+# Selected publications — shown on the homepage.
+# `cats` drives the filter tabs (space-separated): genomics, neuroscience, deep-learning, tools
+# `authors` is raw HTML so your name can be highlighted with <span class="me">...</span>
+# Add a `links` list of { label, url }; leave [] to omit.
+- title: "Preconfigured neuronal firing sequences in human brain organoids"
+  authors: 'van der Molen, T., Spaeth, A., Chini, M., Hernandez, S., Kaurala, G. A., <span class="me">Gonzalez-Ferrer, J.</span>, et al.'
+  venue: "Nature Neuroscience, 29(1), 123–135, 2026."
+  cats: "neuroscience deep-learning"
+  labels: ["Neuroscience"]
+  links:
+    - { label: "Paper", url: "https://www.nature.com/articles/s41593-025-02111-0" }
+
+- title: "SIMS: A deep-learning label transfer tool for single-cell RNA sequencing analysis"
+  authors: '<span class="me">Gonzalez-Ferrer, J.</span>, Lehrer, J., O''Farrell, A., Paten, B., Teodorescu, M., Haussler, D., &hellip; &amp; Mostajo-Radji, M. A.'
+  venue: "Cell Genomics, 4(6), 2024."
+  cats: "genomics deep-learning tools"
+  labels: ["Genomics", "Deep Learning"]
+  links:
+    - { label: "Paper", url: "https://www.cell.com/cell-genomics/fulltext/S2666-979X(24)00165-4" }
+
+- title: "HIPPIE: A multimodal deep learning model for electrophysiological classification of neurons"
+  authors: '<span class="me">Gonzalez-Ferrer, J.</span>, Lehrer, J., Schweiger, H. E., Geng, J., Hernandez, S., &hellip; &amp; Mostajo-Radji, M. A.'
+  venue: "bioRxiv, 2025."
+  cats: "neuroscience deep-learning"
+  labels: ["Neuroscience", "Deep Learning"]
+  links:
+    - { label: "Paper", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11952528/" }
+
+- title: "Toward automated and explainable high-throughput perturbation analysis in single cells"
+  authors: '<span class="me">Gonzalez-Ferrer, J.</span> &amp; Mostajo-Radji, M. A.'
+  venue: "Patterns, 6(4), 2025."
+  cats: "genomics deep-learning tools"
+  labels: ["Genomics", "Deep Learning"]
+  links:
+    - { label: "Paper", url: "https://doi.org/10.1016/j.patter.2025.101228" }
+
+- title: "Fate plasticity of interneuron specification"
+  authors: 'Mostajo-Radji, M. A., Leon, W. R. M., Breevoort, A., <span class="me">Gonzalez-Ferrer, J.</span>, &hellip; &amp; Pollen, A. A.'
+  venue: "iScience, 28(4), 2025."
+  cats: "neuroscience genomics"
+  labels: ["Neuroscience", "Genomics"]
+  links:
+    - { label: "Paper", url: "https://www.cell.com/iscience/fulltext/S2589-0042(25)00556-5" }
+
+- title: "CytoVerse: Single-cell AI foundation models in the browser"
+  authors: 'Currie, R., <span class="me">Gonzalez-Ferrer, J.</span>, Mostajo-Radji, M. A. &amp; Haussler, D.'
+  venue: "bioRxiv, 2026."
+  cats: "genomics deep-learning tools"
+  labels: ["Genomics", "Tools"]
+  links:
+    - { label: "Preprint", url: "https://www.biorxiv.org/content/10.64898/2026.01.29.702554v1" }
+
+- title: "Internet-enabled lab-on-a-chip technology for education"
+  authors: 'Sano, T., Sampad, M. J. N., <span class="me">Gonzalez-Ferrer, J.</span>, et al.'
+  venue: "Scientific Reports, 14, 14364, 2024."
+  cats: "tools"
+  labels: ["Tools"]
+  links:
+    - { label: "Paper", url: "https://doi.org/10.1038/s41598-024-65346-0" }
