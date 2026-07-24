@@ -17,6 +17,7 @@
   labels: ["Genomics", "Deep Learning"]
   links:
     - { label: "Paper", url: "https://www.cell.com/cell-genomics/fulltext/S2666-979X(24)00165-4" }
+    - { label: "GitHub", url: "https://github.com/braingeneers/SIMS" }
 
 - title: "HIPPIE: A multimodal deep learning model for electrophysiological classification of neurons"
   authors: '<span class="me">Gonzalez-Ferrer, J.</span>, Lehrer, J., Schweiger, H. E., Geng, J., Hernandez, S., &hellip; &amp; Mostajo-Radji, M. A.'
@@ -25,6 +26,7 @@
   labels: ["Neuroscience", "Deep Learning"]
   links:
     - { label: "Paper", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11952528/" }
+    - { label: "GitHub", url: "https://github.com/braingeneers/HIPPIE" }
 
 - title: "Toward automated and explainable high-throughput perturbation analysis in single cells"
   authors: '<span class="me">Gonzalez-Ferrer, J.</span> &amp; Mostajo-Radji, M. A.'
@@ -49,6 +51,7 @@
   labels: ["Genomics", "Tools"]
   links:
     - { label: "Preprint", url: "https://www.biorxiv.org/content/10.64898/2026.01.29.702554v1" }
+    - { label: "GitHub", url: "https://github.com/braingeneers/cytoverse" }
 
 - title: "Internet-enabled lab-on-a-chip technology for education"
   authors: 'Sano, T., Sampad, M. J. N., <span class="me">Gonzalez-Ferrer, J.</span>, et al.'

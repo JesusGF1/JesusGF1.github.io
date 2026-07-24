@@ -11,12 +11,14 @@
   body: "New preprint: <strong>CytoVerse</strong> runs single-cell AI foundation models entirely in the browser, searching 20M+ reference cells while keeping data private."
   links:
     - { label: "bioRxiv", url: "https://www.biorxiv.org/content/10.64898/2026.01.29.702554v1" }
+    - { label: "GitHub", url: "https://github.com/braingeneers/cytoverse" }
 
 - date: "2025"
   tags: ["Preprint"]
   body: "Released <strong>HIPPIE</strong>, a multimodal deep-learning model for the electrophysiological classification of neurons."
   links:
     - { label: "Paper", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11952528/" }
+    - { label: "GitHub", url: "https://github.com/braingeneers/HIPPIE" }
 
 - date: "2025"
   tags: ["Paper"]
@@ -35,3 +37,4 @@
   body: "<strong>SIMS</strong>, our deep-learning label-transfer tool for single-cell RNA-seq, was published in <em>Cell Genomics</em>."
   links:
     - { label: "Cell Genomics", url: "https://www.cell.com/cell-genomics/fulltext/S2666-979X(24)00165-4" }
+    - { label: "GitHub", url: "https://github.com/braingeneers/SIMS" }
