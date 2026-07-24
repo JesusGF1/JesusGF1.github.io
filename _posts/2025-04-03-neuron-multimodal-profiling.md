@@ -1,11 +1,16 @@
+---
+layout: post
+title: "Multimodal profiling of neurons: notes on six Patch-seq papers"
+date: 2025-04-03
+tags: [Neuroscience, Single-cell]
+excerpt: "Reading notes on six Patch-seq studies that link transcriptomic, electrophysiological and morphological identity across mouse and human cortical neurons."
+---
 
+These are my reading notes on a set of Patch-seq papers that link the transcriptomic, electrophysiological and morphological identity of neurons. Most of the data comes from the Allen Institute's [multimodal characterization datasets](https://portal.brain-map.org/cell-types/classes/multimodal-characterization).
 
-[Many datasets from the Allen Institute](https://portal.brain-map.org/cell-types/classes/multimodal-characterization)
-
-
-# PAPER 1: Integrated Morphoelectric and Transcriptomic Classification of Cortical GABAergic Cells MOUSE
+## Paper 1: Integrated morphoelectric and transcriptomic classification of cortical GABAergic cells (mouse)
 Number of cells profiled: 4,200 standardized, quality-controlled (QC) Patch-seq recordings from GABAergic interneurons in visual cortex of the adult mouse.
-The dataset, freely available to the public via https:// portal.brain-map.org.
+The dataset is freely available to the public via https://portal.brain-map.org.
 For a subset (517 cells) of transcriptomically and electrophysiologically characterized neurons from the Sst, Pvalb, Vip, Sncg, and Lamp5 subclasses morphological analyses was also performed. Morphologies from selected t-types are aligned to an average cortical template, followed by soma depth distributions and averaged dendrite and axon depth distributions.
 
 
@@ -15,7 +20,7 @@ Transcriptomic and electrophysiology subtypes are not always 1 to 1.
 
 ### Summary of Electrophysiological Analysis
 
-Electrophysiological features were measured from neuronal responses to short (3 ms) and long (1 s) current pulses. Action potentials (APs) were detected using the derivative of membrane potential (dV/dt) and refined based on voltage thresholds, peak height, and timing. Key AP characteristics—threshold, peak, fast trough, width at half-height, and upstroke/downstroke ratio—were calculated.
+Electrophysiological features were measured from neuronal responses to short (3 ms) and long (1 s) current pulses. Action potentials (APs) were detected using the derivative of membrane potential (dV/dt) and refined based on voltage thresholds, peak height, and timing. Key AP characteristics (threshold, peak, fast trough, width at half-height, and upstroke/downstroke ratio) were calculated.
 
 Waveforms from initial APs were concatenated for sparse principal component analysis (PCA), including derivatives. Inter-spike interval (ISI) trajectories were analyzed by normalizing durations and averaging traces. AP features were compared across long current steps using 20 ms binning and interpolation where necessary.
 
@@ -52,7 +57,7 @@ Datasets were built by accumulating feature vectors (AP waveforms, long-step AP 
    - Bitufted cells  
    - Multipolar cells  
 
-4. **Lamp5 (formerly Htr3a+/Vip–) cells**  
+4. **Lamp5 (formerly Htr3a+/Vip-) cells**  
    - Neurogliaform cells  
    - Single bouquet cells  
 
@@ -112,7 +117,7 @@ Sncg-MET-1 was the most abundant met-type, whereas Sncg-MET-2 and Sncg-MET-3 con
 | **Sncg-MET-2**                    | Sncg (Car10, Nptx2)        | Few identified cells; found at L1-L2/3 border; very high input resistance. |
 | **Sncg-MET-3**                    | Sncg Slc17a8               | Few identified cells; deep-layer location. |
 
-# Paper 2: Human neocortical expansion involves glutamatergic neuron diversification (L1, L2 and L3)
+## Paper 2: Human neocortical expansion involves glutamatergic neuron diversification (L1, L2 and L3)
 
 Number of cells profiled: 
 - A total of 385 neurons that passed transcriptomic data quality control mapped with higher confidence to the five supragranular human glutamatergic t-types than to any other neuron types.
@@ -133,7 +138,7 @@ Electrophysiological features were measured from responses elicited by short (3 
 | **COL22A1**  | Smaller, simple dendritic morphology, apical dendrites terminate before L1, high input resistance, increased excitability | Similar to human L5 IT neurons | **Rrad** | **Sla** |
 
 
-# Paper 3: Signature morpho-electric, transcriptomic, and dendritic properties of human layer 5 neocortical pyramidal neurons
+## Paper 3: Signature morpho-electric, transcriptomic, and dendritic properties of human layer 5 neocortical pyramidal neurons
 Number of cells profiled: 
 n = 28 human n = 12 mouse with all of the modalities I am guessing
 
@@ -160,7 +165,7 @@ Dendritic plateau potentials were quantified by measuring area and width.
 | **Physiologically Defined Subtypes (Human MTG)** | ET-like, IT-like 1, IT-like 2 | Strong correspondence between transcriptomic and physiological types | ET-like neurons have higher resonance, lower input resistance; IT-like 2 has highest input resistance and rebound potential | Clear distinctions maintained across species with some divergence |
 
 
-# Paper 4: Phenotypic variation of transcriptomic cell types in mouse motor cortex
+## Paper 4: Phenotypic variation of transcriptomic cell types in mouse motor cortex
 Number of cells profiled: 
 We performed whole-cell recordings from more than 2,000 cells, of which 1,329 cells (from 266 mice).
 Cells that showed poor mapping (owing to a low read count or excessive RNA contamination) were excluded, leaving 1,227 neurons for further analysis (817 inhibitory, 410 excitatory; 369 and 269 with morphological reconstructions, respectively). The resulting data set covered 77 out of the 90 neuronal t-types (Fig.  1a), with 73 t-types having at least one morphologically reconstructed neuron.
@@ -182,21 +187,21 @@ Cells that showed poor mapping (owing to a low read count or excessive RNA conta
 | **ET**                     | Overlaps with IT                                            | Deep-projecting, thick apical dendrites       |
 
 
-# Paper 5: Patch-Seq Links Single-Cell Transcriptomes to Human Islet Dysfunction in Diabetes
+## Paper 5: Patch-seq links single-cell transcriptomes to human islet dysfunction in diabetes
 
 Not neurons but many cells profiled: 1,369 cells profiled.
 
-# Paper 6: Signature morphoelectric properties of diverse GABAergic interneurons in the human neocortex
+## Paper 6: Signature morphoelectric properties of diverse GABAergic interneurons in the human neocortex
 
-Neurons profiled: 778 human neurons in cortical layers 2 to 6, across 44 out of 45 g-aminobutyric acid–producing (GABAergic) transcriptomic types.
+Neurons profiled: 778 human neurons in cortical layers 2 to 6, across 44 out of 45 g-aminobutyric acid-producing (GABAergic) transcriptomic types.
 
 | **Cell Type**        | **Transcriptomic Type**   | **Electrophysiological Properties**                                        | **Morphological Description**                                                                                         |
 |----------------------|---------------------------|----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| **PVALB WFDC2**       | PVALB                     | Significant electrophysiological differences between acute and culture paradigms, with differences in AP width and sag. 43/84 features differed across paradigms. Species differences were observed, with the acute mouse data showing variations in AP width when compared with the human data. | Consistent morphometric features between acute and culture paradigms. Cortical depth–matched neurons show similar UMAP clustering. |
+| **PVALB WFDC2**       | PVALB                     | Significant electrophysiological differences between acute and culture paradigms, with differences in AP width and sag. 43/84 features differed across paradigms. Species differences were observed, with the acute mouse data showing variations in AP width when compared with the human data. | Consistent morphometric features between acute and culture paradigms. Cortical depth-matched neurons show similar UMAP clustering. |
 | **SST**               | SST                       | Differences in electrophysiological responses between subclasses in UMAP, but detailed responses not specified.         | Morphological diversity, specific features not detailed.                                                                 |
 | **VIP**               | VIP                       | Distinct electrophysiological features observed when comparing across subclasses in UMAP.                                 | Small cell bodies and bipolar dendrites, primarily found in L2 and L3. Enriched for VIP neuron types, with varied morphologies. |
-| **LAMP5/PAX6**        | LAMP5/PAX6                | Electrophysiological features were separated in UMAP based on subclass distinctions.                                     | Neurogliaform morphologies, with stellate dendrites, numerous primary dendrites, and extensive axon branching. Shortest soma–to–branch tip distances. |
-| **SST FRZB**          | SST FRZB                  | Electrophysiological features largely aligned with PVALB, including fast-spiking behavior, narrow APs, and consistent AP kinetics such as upstroke/downstroke ratio. Most features aligned with PVALB in acute and culture paradigms. | Morphologically more similar to PVALB basket cells than SST neurons, with features like horizontal axon extent and axon–dendrite dissimilarity. |
+| **LAMP5/PAX6**        | LAMP5/PAX6                | Electrophysiological features were separated in UMAP based on subclass distinctions.                                     | Neurogliaform morphologies, with stellate dendrites, numerous primary dendrites, and extensive axon branching. Shortest soma-to-branch tip distances. |
+| **SST FRZB**          | SST FRZB                  | Electrophysiological features largely aligned with PVALB, including fast-spiking behavior, narrow APs, and consistent AP kinetics such as upstroke/downstroke ratio. Most features aligned with PVALB in acute and culture paradigms. | Morphologically more similar to PVALB basket cells than SST neurons, with features like horizontal axon extent and axon-dendrite dissimilarity. |
 | **L4-5 SST STK32A**   | SST STK32A                | Quasi-fast-spiking electrophysiological behavior, preferentially targeting L4 pyramidal neurons in mice.               | Found predominantly in L4 and L5 with extensive axonal branching, particularly innervating L4 pyramidal neurons. |
 | **SST CALB1**         | SST CALB1                 | Electrophysiological properties vary across morphological types. Sparse SST neurons show lower sag, higher adaptation ratio, and delayed AP firing compared to MCs and DBCs. | Four morphological types identified: MCs, DBCs, basket-like cells, and sparse SST. MCs have extensive L1 axons; DBCs have narrow axons with characteristic horse-tail morphology. |
 | **Double Bouquet Cell (DBC)** | SST CALB1 / SST ADGRG6 | Higher sag ratio in all DBCs. Diverse firing patterns include accommodating, stuttering, and irregular spiking.           | Horse-tail morphology with ascending and descending narrow axon bundles, found in L2 (SST CALB1) and L3 (SST ADGRG6). Narrow, bitufted or multipolar dendrites. |

@@ -1,14 +1,18 @@
-# Getting Started with AllenSDK and Neurodata Without Borders
+---
+layout: post
+title: "Getting started with AllenSDK and Neurodata Without Borders"
+date: 2024-09-25
+tags: [Neuroscience, Tutorial]
+excerpt: "How to set up AllenSDK to download Allen Institute electrophysiology data in the Neurodata Without Borders (NWB) format."
+---
 
-## Introduction
+The AllenSDK (Allen Software Development Kit) is a Python package that facilitates downloading and manipulating Allen Institute data sets. Using the AllenSDK, Allen Brain Observatory experimental data can be retrieved in the Neurodata Without Borders (NWB) file format.
 
-The AllenSDK (Allen Software Development Kit) is a Python package that facilitates downloading and manipulating Allen Institute data sets. Using the AllenSDK, Allen Brain Observatory experimental data can be retrieved in the Neurodata Without Borders (NWB) file format. 
+NWB is a data standard for neurophysiology, providing neuroscientists with a common standard to share, archive, use, and build analysis tools for neurophysiology data. It is designed to store a variety of neurophysiology data, including intracellular and extracellular electrophysiology experiments, optical physiology experiments, and tracking and stimulus data.
 
-NWB is a data standard for neurophysiology, providing neuroscientists with a common standard to share, archive, use, and build analysis tools for neurophysiology data. NWB is designed to store a variety of neurophysiology data, including data from intracellular and extracellular electrophysiology experiments, data from optical physiology experiments, and tracking and stimulus data.
+## Installation guide
 
-## Installation Guide
-
-To get started using this resource, we need to set up our Python environment and install the required package. Here are the steps:
+To get started with this resource, we need to set up our Python environment and install the required package. Here are the steps:
 
 ```bash
 # Create a new conda environment with Python 3.8
@@ -26,12 +30,14 @@ pip install allensdk
 
 ## Resources
 
-### Example Notebooks
-I've shared some example notebooks in [this GitHub repository](https://github.com/JesusGF1/neurodataWB) that demonstrate how to work with the AllenSDK and NWB files.
+### Example notebooks
 
-### Additional Resources
+I have shared some example notebooks in [this GitHub repository](https://github.com/JesusGF1/neurodataWB) that demonstrate how to work with the AllenSDK and NWB files.
+
+### Additional resources
+
 For more information, check out these useful links:
 
-* [Neurodata Without Borders Official Website](https://www.nwb.org/)
-* [SpikeInterface Documentation](https://spikeinterface.readthedocs.io/en/latest/)
-* [AllenSDK Visual Coding Neuropixels Documentation](https://allensdk.readthedocs.io/en/latest/visual_coding_neuropixels.html)
+- [Neurodata Without Borders official website](https://www.nwb.org/)
+- [SpikeInterface documentation](https://spikeinterface.readthedocs.io/en/latest/)
+- [AllenSDK Visual Coding Neuropixels documentation](https://allensdk.readthedocs.io/en/latest/visual_coding_neuropixels.html)
