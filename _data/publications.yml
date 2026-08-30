@@ -2,6 +2,15 @@
 # `cats` drives the filter tabs (space-separated): genomics, neuroscience, deep-learning, tools
 # `authors` is raw HTML so your name can be highlighted with <span class="me">...</span>
 # Add a `links` list of { label, url }; leave [] to omit.
+- title: "HIPPIE: a generative model for electrophysiological analysis across species, technologies, and modalities"
+  authors: '<span class="me">Gonzalez-Ferrer, J.</span>, Lehrer, J., Alvarez-Esteban, B., Moreno-Ochando, A., Schweiger, H. E., &hellip; &amp; Mostajo-Radji, M. A.'
+  venue: "Nature Communications, 2026."
+  cats: "neuroscience deep-learning"
+  labels: ["Neuroscience", "Deep Learning"]
+  links:
+    - { label: "Paper", url: "https://doi.org/10.1038/s41467-026-76939-w" }
+    - { label: "GitHub", url: "https://github.com/braingeneers/HIPPIE" }
+
 - title: "Preconfigured neuronal firing sequences in human brain organoids"
   authors: 'van der Molen, T., Spaeth, A., Chini, M., Hernandez, S., Kaurala, G. A., <span class="me">Gonzalez-Ferrer, J.</span>, et al.'
   venue: "Nature Neuroscience, 29(1), 123–135, 2026."
@@ -18,15 +27,6 @@
   links:
     - { label: "Paper", url: "https://www.cell.com/cell-genomics/fulltext/S2666-979X(24)00165-4" }
     - { label: "GitHub", url: "https://github.com/braingeneers/SIMS" }
-
-- title: "HIPPIE: A multimodal deep learning model for electrophysiological classification of neurons"
-  authors: '<span class="me">Gonzalez-Ferrer, J.</span>, Lehrer, J., Schweiger, H. E., Geng, J., Hernandez, S., &hellip; &amp; Mostajo-Radji, M. A.'
-  venue: "bioRxiv, 2025."
-  cats: "neuroscience deep-learning"
-  labels: ["Neuroscience", "Deep Learning"]
-  links:
-    - { label: "Paper", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11952528/" }
-    - { label: "GitHub", url: "https://github.com/braingeneers/HIPPIE" }
 
 - title: "Toward automated and explainable high-throughput perturbation analysis in single cells"
   authors: '<span class="me">Gonzalez-Ferrer, J.</span> &amp; Mostajo-Radji, M. A.'

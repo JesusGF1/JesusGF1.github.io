@@ -2,6 +2,13 @@
 # Edit freely: each entry has a date, one or more tags, an HTML body, and optional links.
 - date: "2026"
   tags: ["Paper"]
+  body: "<strong>HIPPIE</strong>, our generative model for electrophysiological analysis across species, technologies and modalities, is out in <em>Nature Communications</em>."
+  links:
+    - { label: "Nature Communications", url: "https://doi.org/10.1038/s41467-026-76939-w" }
+    - { label: "GitHub", url: "https://github.com/braingeneers/HIPPIE" }
+
+- date: "2026"
+  tags: ["Paper"]
   body: "Our work on <strong>preconfigured neuronal firing sequences</strong> in human brain organoids is out in <em>Nature Neuroscience</em>."
   links:
     - { label: "Nature Neuroscience", url: "https://www.nature.com/articles/s41593-025-02111-0" }
@@ -15,9 +22,9 @@
 
 - date: "2025"
   tags: ["Preprint"]
-  body: "Released <strong>HIPPIE</strong>, a multimodal deep-learning model for the electrophysiological classification of neurons."
+  body: "Released the <strong>HIPPIE</strong> preprint, a multimodal deep-learning model for the electrophysiological classification of neurons."
   links:
-    - { label: "Paper", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11952528/" }
+    - { label: "bioRxiv", url: "https://doi.org/10.1101/2025.03.14.642461" }
     - { label: "GitHub", url: "https://github.com/braingeneers/HIPPIE" }
 
 - date: "2025"

@@ -60,6 +60,9 @@ Micol and Ponce labs – Institute of Bioengineering, Universidad Miguel Hernán
 **PI: Maria Rosa Ponce Molet, PhD**
 
 # PAPERS
+## 2026
+Article: **Gonzalez-Ferrer, J**., Lehrer, J., Alvarez-Esteban, B., Moreno-Ochando, A., Schweiger, H. E., ... & Mostajo-Radji, M. A. (2026). HIPPIE: a generative model for electrophysiological analysis across species, technologies, and modalities. *Nature Communications*. https://doi.org/10.1038/s41467-026-76939-w
+
 ## 2024
 Article: **Gonzalez-Ferrer, J**., Lehrer, J., O'Farrell, A., Paten, B., Teodorescu, M., Haussler, D., ... & Mostajo-Radji, M. A. (2024). SIMS: A deep-learning label transfer tool for single-cell RNA sequencing analysis. Cell Genomics, 4(6).
 
