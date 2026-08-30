@@ -63,17 +63,23 @@ Micol and Ponce labs – Institute of Bioengineering, Universidad Miguel Hernán
 ## 2026
 Article: **Gonzalez-Ferrer, J**., Lehrer, J., Alvarez-Esteban, B., Moreno-Ochando, A., Schweiger, H. E., ... & Mostajo-Radji, M. A. (2026). HIPPIE: a generative model for electrophysiological analysis across species, technologies, and modalities. *Nature Communications*. https://doi.org/10.1038/s41467-026-76939-w
 
-## 2024
-Article: **Gonzalez-Ferrer, J**., Lehrer, J., O'Farrell, A., Paten, B., Teodorescu, M., Haussler, D., ... & Mostajo-Radji, M. A. (2024). SIMS: A deep-learning label transfer tool for single-cell RNA sequencing analysis. Cell Genomics, 4(6).
+## 2026
+Article: van der Molen, T., Spaeth, A., Chini, M., Hernandez, S., Kaurala, G. A., Schweiger, H. E., ... **Gonzalez-Ferrer, J**., ... & Sharf, T. (2026). Preconfigured neuronal firing sequences in human brain organoids. *Nature Neuroscience*, 29(1), 123-135. https://doi.org/10.1038/s41593-025-02111-0
+
+## 2026
+Preprint: Currie, R., **Gonzalez-Ferrer, J**., Mostajo-Radji, M. A., & Haussler, D. (2026). CytoVerse: Single-cell AI foundation models in the browser. *bioRxiv*, 2026.01.29.702554. https://doi.org/10.64898/2026.01.29.702554
+
+## 2025
+Article: **Gonzalez-Ferrer, J**., & Mostajo-Radji, M. A. (2025). Toward automated and explainable high-throughput perturbation analysis in single cells. *Patterns*, 6(4), 101228. https://doi.org/10.1016/j.patter.2025.101228
+
+## 2025
+Article: Mostajo-Radji, M. A., Leon, W. R. M., Breevoort, A., **Gonzalez-Ferrer, J**., Schweiger, H. E., Lehrer, J., ... & Pollen, A. A. (2025). Fate plasticity of interneuron specification. *iScience*, 28(4), 112295. https://doi.org/10.1016/j.isci.2025.112295
 
 ## 2024
-Article: Sano, T., Sampad, M.J.N., **Gonzalez-Ferrer, J**. et al. Internet-enabled lab-on-a-chip technology for education. Sci Rep 14, 14364 (2024). https://doi.org/10.1038/s41598-024-65346-0 
+Article: **Gonzalez-Ferrer, J**., Lehrer, J., O'Farrell, A., Paten, B., Teodorescu, M., Haussler, D., ... & Mostajo-Radji, M. A. (2024). SIMS: A deep-learning label transfer tool for single-cell RNA sequencing analysis. *Cell Genomics*, 4(6), 100581. https://doi.org/10.1016/j.xgen.2024.100581
 
 ## 2024
-Resubmitted: van der Molen, T., Spaeth, A., Chini, M., Bartram, J., Dendukuri, A., Zhang, Z., **Gonzalez-Ferrer, J**, … et al. (2023). Protosequences in human cortical organoids model intrinsic states in the developing cortex. *bioRxiv : the preprint server for biology*, 2023.12.29.573646. https://doi.org/10.1101/2023.12.29.573646
+Article: Sano, T., Sampad, M. J. N., **Gonzalez-Ferrer, J**., et al. (2024). Internet-enabled lab-on-a-chip technology for education. *Scientific Reports*, 14, 14364. https://doi.org/10.1038/s41598-024-65346-0
 
 ## 2024
-Preprint: Mostajo-Radji, M. A., Leon, W. R. M., Breevoort, A., **Gonzalez-Ferrer, J**., Schweiger, H. E., Lehrer, J., ... & Pollen, A. A. (2024). Fate plasticity of interneuron specification. bioRxiv, 2024-10.
-
-## 2024
-Under Review: Zabetian, Zoe., **Gonzalez-Ferrer, J**., Lehrer, J., Teodorescu, M., Haussler, D., & Mostajo-Radji, M. Al. Single-cell RNA sequencing analysis using deep-learning (2024). TBD
+Under Review: Zabetian, Z., **Gonzalez-Ferrer, J**., Lehrer, J., Teodorescu, M., Haussler, D., & Mostajo-Radji, M. A. Single-cell RNA sequencing analysis using deep-learning (2024). TBD
