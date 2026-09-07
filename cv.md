@@ -18,7 +18,8 @@ AI target discovery at Genentech.
 # PROFESSIONAL EXPERIENCE
 
 ## Graduate Student Researcher — UC Santa Cruz (Braingeneers) · 2022–present
-**PIs: David Haussler, Mohammed A. Mostajo-Radji**
+PIs: David Haussler, Mohammed A. Mostajo-Radji
+{: .role-meta}
 
 * Built **SIMS**, an explainable deep-learning model for cell-type classification from single-cell RNA-seq, published in *Cell Genomics* and released as open-source tooling adopted by other labs.
 * Developed **HIPPIE**, a multimodal deep-learning model that classifies neurons from extracellular electrophysiology, published in *Nature Communications*.
@@ -28,7 +29,8 @@ AI target discovery at Genentech.
 * Contributed to grant proposals to NIH, NSF, CIRM, UCOP and BBRF, supporting $50M+ in awarded funding and $60M+ under review.
 
 ## AI Researcher — Genentech (gRED), South San Francisco · 2025–present
-**Managers: Alsu Missarova, Héctor Corrada Bravo, Jason Vander Heiden**
+Managers: Alsu Missarova, Héctor Corrada Bravo, Jason Vander Heiden
+{: .role-meta}
 
 * Developed graph-based and machine-learning approaches built on single-cell foundation models to power drug discovery pipelines and downstream statistical frameworks for target identification, translational impact, and discovery of shared disease mechanisms across conditions.
 

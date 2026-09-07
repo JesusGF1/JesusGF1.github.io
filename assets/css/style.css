@@ -330,3 +330,11 @@ th { background: var(--bg-2); }
 @media (max-width: 600px) {
   .focus { padding-left: 16px; }
 }
+
+/* CV: PI / manager line under a role heading */
+.page-content .role-meta {
+  font-size: .9rem;
+  font-style: italic;
+  color: var(--fg-muted);
+  margin: -.1rem 0 .6rem;
+}
