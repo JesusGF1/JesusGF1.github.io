@@ -6,8 +6,7 @@ updated: "September 2026"
 ---
 
 <p class="section-note" style="margin-top:-16px;">
-  Last updated {{ page.updated }}. &nbsp;
-  <a href="{{ '/assets/Jesus_Gonzalez-Ferrer_CV.pdf' | relative_url }}">Download PDF &darr;</a>
+  Last updated {{ page.updated }}.
 </p>
 
 I build deep-learning and foundation-model methods for single-cell genomics and multimodal
