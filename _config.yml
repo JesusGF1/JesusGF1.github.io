@@ -3,8 +3,9 @@ author: "Jesus Gonzalez Ferrer"
 description: "Jesus Gonzalez Ferrer — PhD candidate in Bioinformatics & Bioengineering at UC Santa Cruz. Genomics, neuroscience and deep learning."
 url: "https://jesusgf1.github.io"
 
-# Used for link previews (Open Graph / Twitter cards)
-image: /images/Foto_jesus.jpeg
+# Used for link previews (Open Graph / Twitter cards).
+# jekyll-seo-tag reads `image` per page, not site-wide, so the default is
+# applied to every page via `defaults` at the bottom of this file.
 twitter:
   username: Brainformatics
   card: summary_large_image
@@ -42,6 +43,10 @@ titles_from_headings:
   collections: true
 
 defaults:
+  - scope:
+      path: ""
+    values:
+      image: /images/Foto_jesus.jpeg
   - scope:
       path: ""
       type: post
