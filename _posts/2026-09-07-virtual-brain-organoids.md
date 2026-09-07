@@ -3,6 +3,7 @@ layout: post
 title: "What would a virtual brain organoid actually be?"
 date: 2026-09-07
 tags: [Neuroscience, Deep Learning]
+published: false  # held until the VBO review is submitted
 excerpt: "Brain organoids have gotten good. What the field still lacks is a shared predictive object — a model you can hand a genotype and a perturbation and get back what the tissue will do."
 ---
 
