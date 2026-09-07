@@ -9,7 +9,7 @@
   --fg:            #ececec;
   --fg-strong:     #ffffff;
   --fg-muted:      #a2a2a2;
-  --fg-dim:        #6f6f6f;
+  --fg-dim:        #8d8d8d;
   --border:        #2b2b2b;
   --border-strong: #3a3a3a;
   --serif: "Playfair Display", Georgia, "Times New Roman", serif;
@@ -305,4 +305,28 @@ th { background: var(--bg-2); }
   .site-footer { flex-direction: column; }
   .post_navi { flex-direction: column; gap: 18px; }
   .post_navi .post_navi-item { width: 100%; padding: 0 1.6em; }
+}
+
+/* ---------- research direction block ---------- */
+.focus {
+  border-left: 2px solid var(--border-strong);
+  padding-left: 22px;
+}
+.focus p { margin: 0 0 1rem; }
+.focus p:last-child { margin-bottom: 0; }
+.focus strong { color: var(--fg-strong); font-weight: 600; }
+
+/* CV link sitting alongside the social icons */
+.social .cv-link {
+  font-size: .82rem;
+  letter-spacing: .06em;
+  border: 1px solid var(--border-strong);
+  border-radius: 4px;
+  padding: 1px 7px;
+  line-height: 1.5;
+}
+.social .cv-link:hover { border-color: var(--fg-strong); }
+
+@media (max-width: 600px) {
+  .focus { padding-left: 16px; }
 }

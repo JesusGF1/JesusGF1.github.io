@@ -1,45 +1,63 @@
 # Selected news — shown on the homepage timeline.
 # Edit freely: each entry has a date, one or more tags, an HTML body, and optional links.
-- date: "2026"
+# Keep entries in reverse-chronological order; dates are free text ("Aug 2026").
+- date: "Aug 2026"
   tags: ["Paper"]
   body: "<strong>HIPPIE</strong>, our generative model for electrophysiological analysis across species, technologies and modalities, is out in <em>Nature Communications</em>."
   links:
     - { label: "Nature Communications", url: "https://doi.org/10.1038/s41467-026-76939-w" }
     - { label: "GitHub", url: "https://github.com/braingeneers/HIPPIE" }
 
+- date: "Jul 2026"
+  tags: ["Paper"]
+  body: "Our <strong>cloud-connected pluripotent stem cell platform</strong>, which lets students run and observe live stem cell experiments remotely, is out in <em>Stem Cell Reports</em>."
+  links:
+    - { label: "Stem Cell Reports", url: "https://doi.org/10.1016/j.stemcr.2026.102962" }
+
 - date: "2026"
+  tags: ["Award"]
+  body: "Awarded a <strong>Dissertation-Year Fellowship</strong> by UC Santa Cruz for 2026&ndash;27."
+
+- date: "Jan 2026"
   tags: ["Paper"]
   body: "Our work on <strong>preconfigured neuronal firing sequences</strong> in human brain organoids is out in <em>Nature Neuroscience</em>."
   links:
     - { label: "Nature Neuroscience", url: "https://www.nature.com/articles/s41593-025-02111-0" }
 
-- date: "2026"
+- date: "Jan 2026"
   tags: ["Preprint"]
   body: "New preprint: <strong>CytoVerse</strong> runs single-cell AI foundation models entirely in the browser, searching 20M+ reference cells while keeping data private."
   links:
     - { label: "bioRxiv", url: "https://www.biorxiv.org/content/10.64898/2026.01.29.702554v1" }
     - { label: "GitHub", url: "https://github.com/braingeneers/cytoverse" }
 
-- date: "2025"
+- date: "Jun 2025"
+  tags: ["Paper"]
+  body: "A step-by-step <strong>protocol for deep-learning-driven cell type label transfer</strong> with SIMS is out in <em>STAR Protocols</em>."
+  links:
+    - { label: "STAR Protocols", url: "https://doi.org/10.1016/j.xpro.2025.103768" }
+    - { label: "GitHub", url: "https://github.com/braingeneers/SIMS" }
+
+- date: "Apr 2025"
+  tags: ["Paper"]
+  body: "A perspective on <strong>automated, explainable high-throughput perturbation analysis</strong> in single cells is out in <em>Patterns</em>."
+  links:
+    - { label: "Patterns", url: "https://doi.org/10.1016/j.patter.2025.101228" }
+
+- date: "Apr 2025"
+  tags: ["Paper"]
+  body: "Our study of the <strong>fate plasticity of interneuron specification</strong> was published in <em>iScience</em>."
+  links:
+    - { label: "iScience", url: "https://www.cell.com/iscience/fulltext/S2589-0042(25)00556-5" }
+
+- date: "Mar 2025"
   tags: ["Preprint"]
   body: "Released the <strong>HIPPIE</strong> preprint, a multimodal deep-learning model for the electrophysiological classification of neurons."
   links:
     - { label: "bioRxiv", url: "https://doi.org/10.1101/2025.03.14.642461" }
     - { label: "GitHub", url: "https://github.com/braingeneers/HIPPIE" }
 
-- date: "2025"
-  tags: ["Paper"]
-  body: "A perspective on <strong>automated, explainable high-throughput perturbation analysis</strong> in single cells is out in <em>Patterns</em>."
-  links:
-    - { label: "Patterns", url: "https://doi.org/10.1016/j.patter.2025.101228" }
-
-- date: "2025"
-  tags: ["Paper"]
-  body: "Our study of the <strong>fate plasticity of interneuron specification</strong> was published in <em>iScience</em>."
-  links:
-    - { label: "iScience", url: "https://www.cell.com/iscience/fulltext/S2589-0042(25)00556-5" }
-
-- date: "2024"
+- date: "Jun 2024"
   tags: ["Paper"]
   body: "<strong>SIMS</strong>, our deep-learning label-transfer tool for single-cell RNA-seq, was published in <em>Cell Genomics</em>."
   links:

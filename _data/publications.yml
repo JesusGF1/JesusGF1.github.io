@@ -45,7 +45,7 @@
     - { label: "Paper", url: "https://www.cell.com/iscience/fulltext/S2589-0042(25)00556-5" }
 
 - title: "CytoVerse: Single-cell AI foundation models in the browser"
-  authors: 'Currie, R., <span class="me">Gonzalez-Ferrer, J.</span>, Mostajo-Radji, M. A. &amp; Haussler, D.'
+  authors: 'Currie, R.*, <span class="me">Gonzalez-Ferrer, J.*</span>, Mostajo-Radji, M. A. &amp; Haussler, D.'
   venue: "bioRxiv, 2026."
   cats: "genomics deep-learning tools"
   labels: ["Genomics", "Tools"]

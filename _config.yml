@@ -1,6 +1,13 @@
 title: "The Brainformatician"
 author: "Jesus Gonzalez Ferrer"
-description: "Hi there! The Brainformatician contains posts about neuroscience, genetics, bioinformatics and Artificial Intelligence" # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
+description: "Jesus Gonzalez Ferrer — PhD candidate in Bioinformatics & Bioengineering at UC Santa Cruz. Genomics, neuroscience and deep learning."
+url: "https://jesusgf1.github.io"
+
+# Used for link previews (Open Graph / Twitter cards)
+image: /images/Foto_jesus.jpeg
+twitter:
+  username: Brainformatics
+  card: summary_large_image
 
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
